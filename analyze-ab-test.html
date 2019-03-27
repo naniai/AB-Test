@@ -12749,7 +12749,6 @@ Name: user_id, dtype: int64</pre>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><code>1.</code> 现在，你要考虑的是，你需要根据提供的所有数据做出决定。如果你想假定旧的页面效果更好，除非新的页面在类型I错误率为5％的情况下才能证明效果更好，那么，你的零假设和备择假设是什么？ 你可以根据单词或旧页面与新页面的转化率 <strong>$p_{old}$</strong> 与 <strong>$p_{new}$</strong> 来陈述你的假设。</p>
-<p><strong>在这里给出你的答案。</strong></p>
 
 </div>
 </div>
@@ -12758,8 +12757,8 @@ Name: user_id, dtype: int64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>零假设$H_0$：旧页面的转化率大于或等于新页面的转化率</p>
-<p>备择假设$H_1$ : 旧页面的转化率小于新页面的转化率</p>
+<p><strong>零假设$H_0$：旧页面的转化率大于或等于新页面的转化率</strong></p>
+<p><strong>备择假设$H_1$ : 旧页面的转化率小于新页面的转化率</strong></p>
 
 </div>
 </div>
@@ -12984,7 +12983,7 @@ $$H_1 : p_{old} &lt; p_{new}$$</p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.879457711100406</pre>
+<pre>0.8806620328951896</pre>
 </div>
 
 </div>
@@ -13027,7 +13026,7 @@ $$H_1 : p_{old} &lt; p_{new}$$</p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.8796412296763357</pre>
+<pre>0.8795930448669411</pre>
 </div>
 
 </div>
@@ -13069,7 +13068,7 @@ $$H_1 : p_{old} &lt; p_{new}$$</p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>-0.00018351857592968646</pre>
+<pre>0.0010689880282485076</pre>
 </div>
 
 </div>
@@ -13150,7 +13149,7 @@ $$H_1 : p_{old} &lt; p_{new}$$</p>
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
+<img src="data:image/png;base64,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
 "
 >
 </div>
@@ -13231,7 +13230,7 @@ $$H_1 : p_{old} &lt; p_{new}$$</p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.lines.Line2D at 0x11f857e48&gt;</pre>
+<pre>&lt;matplotlib.lines.Line2D at 0x11e1b9160&gt;</pre>
 </div>
 
 </div>
@@ -13244,7 +13243,7 @@ $$H_1 : p_{old} &lt; p_{new}$$</p>
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYAAAAD8CAYAAAB+UHOxAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDMuMC4yLCBodHRwOi8vbWF0cGxvdGxpYi5vcmcvOIA7rQAAEkZJREFUeJzt3X+s3Xd93/Hnq3YSttE2Tn2TubaZXeZKTf5YACtkYn9kTZufCKfS0Iy01qJIrrREArXTZMof6egiJe1aKjQWlDZWTUdrsgLCAnepyagqpJHYoSHguJkviUsu9mJ3pgGElsnhvT/Ox82Jc+6959r33OPk83xIX32/5/39fL/fzyc3uq97vp/vOU5VIUnqz49MuwOSpOkwACSpUwaAJHXKAJCkThkAktQpA0CSOmUASFKnDABJ6pQBIEmdWj3tDixk7dq1tWnTpml3Q8vl8ccH67e9bbr9kF7nHn/88b+tqpnF2l3UAbBp0yYOHTo07W5ouSSDtT9TaaKS/M047bwFJEmdMgAkqVMGgCR1ygCQpE4ZAJLUKQNAkjplAEhSpwwASerUogGQ5A1JHkvytSSHk/yHVt+c5NEkR5N8KsmlrX5Zez3b9m8aOtcHW/3pJDdPalCSpMWN80ngF4GfrarvJ7kE+HKSPwN+FfhIVe1N8nHgfcD9bf2dqvqnSbYD9wH/OsnVwHbgGuAngS8m+emqemkC41InNu36wtSufeze26d2bWk5LPoOoAa+315e0pYCfhb401bfA9zRtre117T9NyZJq++tqher6llgFrhuWUYhSVqyseYAkqxK8gRwEjgAfBP4u6o605rMAevb9nrgOYC2/wXgJ4brI46RJK2wsQKgql6qqmuBDQz+av+ZUc3aOvPsm6/+Ckl2JjmU5NCpU6fG6Z4k6Tws6Smgqvo74C+A64HLk5ydQ9gAHG/bc8BGgLb/x4HTw/URxwxf44Gq2lpVW2dmFv02U0nSeRrnKaCZJJe37X8A/BxwBPgS8K9asx3A59r2vvaatv9/VFW1+vb2lNBmYAvw2HINRJK0NOM8BbQO2JNkFYPAeKiqPp/kKWBvkv8I/BXwYGv/IPBHSWYZ/OW/HaCqDid5CHgKOAPc6RNAkjQ9iwZAVT0JvGVE/RlGPMVTVf8XePc857oHuGfp3ZQkLTc/CSxJnTIAJKlTBoAkdeqi/kfhpYvZtL6Gwq+g0HLxHYAkdcoAkKROGQCS1CkDQJI6ZQBIUqcMAEnqlAEgSZ0yACSpUwaAJHXKAJCkThkAktQpA0CSOmUASFKnDABJ6pQBIEmdMgAkqVMGgCR1ygCQpE4ZAJLUKQNAkjplAEhSpxYNgCQbk3wpyZEkh5O8v9V/I8m3kzzRltuGjvlgktkkTye5eah+S6vNJtk1mSFJksaxeow2Z4Bfq6qvJvlR4PEkB9q+j1TVfxpunORqYDtwDfCTwBeT/HTb/THg54E54GCSfVX11HIMRJK0NIsGQFWdAE607e8lOQKsX+CQbcDeqnoReDbJLHBd2zdbVc8AJNnb2hoAkjQFS5oDSLIJeAvwaCvdleTJJLuTrGm19cBzQ4fNtdp8dUnSFIwdAEneCHwa+EBVfRe4H3gzcC2Ddwi/c7bpiMNrgfq519mZ5FCSQ6dOnRq3e5KkJRorAJJcwuCX/yer6jMAVfV8Vb1UVT8Efp+Xb/PMARuHDt8AHF+g/gpV9UBVba2qrTMzM0sdjyRpTOM8BRTgQeBIVf3uUH3dULNfAL7RtvcB25NclmQzsAV4DDgIbEmyOcmlDCaK9y3PMCRJSzXOU0DvAH4R+HqSJ1rt14H3JLmWwW2cY8CvAFTV4SQPMZjcPQPcWVUvASS5C3gYWAXsrqrDyzgWSdISjPMU0JcZff9+/wLH3APcM6K+f6HjJEkrx08CS1KnDABJ6pQBIEmdMgAkqVMGgCR1ygCQpE4ZAJLUKQNAkjplAEhSpwwASeqUASBJnTIAJKlTBoAkdcoAkKROGQCS1CkDQJI6ZQBIUqcMAEnqlAEgSZ0yACSpUwaAJHXKAJCkThkAktQpA0CSOmUASFKnFg2AJBuTfCnJkSSHk7y/1a9IciDJ0bZe0+pJ8tEks0meTPLWoXPtaO2PJtkxuWFJkhYzzjuAM8CvVdXPANcDdya5GtgFPFJVW4BH2muAW4EtbdkJ3A+DwADuBt4OXAfcfTY0JEkrb9EAqKoTVfXVtv094AiwHtgG7GnN9gB3tO1twCdq4CvA5UnWATcDB6rqdFV9BzgA3LKso5EkjW1JcwBJNgFvAR4FrqqqEzAICeDK1mw98NzQYXOtNl9dkjQFYwdAkjcCnwY+UFXfXajpiFotUD/3OjuTHEpy6NSpU+N2T5K0RGMFQJJLGPzy/2RVfaaVn2+3dmjrk60+B2wcOnwDcHyB+itU1QNVtbWqts7MzCxlLJKkJRjnKaAADwJHqup3h3btA84+ybMD+NxQ/Zfa00DXAy+0W0QPAzclWdMmf29qNUnSFKweo807gF8Evp7kiVb7deBe4KEk7wO+Bby77dsP3AbMAj8A3gtQVaeT/CZwsLX7cFWdXpZRSJKWbNEAqKovM/r+PcCNI9oXcOc859oN7F5KByVJk+EngSWpUwaAJHXKAJCkThkAktQpA0CSOmUASFKnDABJ6pQBIEmdMgAkqVMGgCR1ygCQpE4ZAJLUKQNAkjplAEhSpwwASeqUASBJnTIAJKlTBoAkdcoAkKROGQCS1KlF/1F4aRybdn1h0TbHltBW0uT5DkCSOmUASFKnDABJ6pQBIEmdWjQAkuxOcjLJN4Zqv5Hk20meaMttQ/s+mGQ2ydNJbh6q39Jqs0l2Lf9QJElLMc47gD8EbhlR/0hVXduW/QBJrga2A9e0Y/5LklVJVgEfA24Frgbe09pKkqZk0cdAq+ovk2wa83zbgL1V9SLwbJJZ4Lq2b7aqngFIsre1fWrJPZYkLYsLmQO4K8mT7RbRmlZbDzw31Gau1earS5Km5HwD4H7gzcC1wAngd1o9I9rWAvVXSbIzyaEkh06dOnWe3ZMkLea8AqCqnq+ql6rqh8Dv8/Jtnjlg41DTDcDxBeqjzv1AVW2tqq0zMzPn0z1J0hjOKwCSrBt6+QvA2SeE9gHbk1yWZDOwBXgMOAhsSbI5yaUMJor3nX+3JUkXatFJ4CR/AtwArE0yB9wN3JDkWga3cY4BvwJQVYeTPMRgcvcMcGdVvdTOcxfwMLAK2F1Vh5d9NJKksY3zFNB7RpQfXKD9PcA9I+r7gf1L6p0kaWL8NlDpNWaa36Z67N7bp3ZtLT+/CkKSOmUASFKnDABJ6pQBIEmdMgAkqVMGgCR1ygCQpE4ZAJLUKQNAkjplAEhSpwwASeqUASBJnTIAJKlTBoAkdcoAkKROGQCS1CkDQJI6ZQBIUqcMAEnqlAEgSZ0yACSpUwaAJHXKAJCkThkAktSpRQMgye4kJ5N8Y6h2RZIDSY629ZpWT5KPJplN8mSStw4ds6O1P5pkx2SGI0ka1zjvAP4QuOWc2i7gkaraAjzSXgPcCmxpy07gfhgEBnA38HbgOuDus6EhSZqORQOgqv4SOH1OeRuwp23vAe4Yqn+iBr4CXJ5kHXAzcKCqTlfVd4ADvDpUJEkr6HznAK6qqhMAbX1lq68HnhtqN9dq89UlSVOy3JPAGVGrBeqvPkGyM8mhJIdOnTq1rJ2TJL3sfAPg+XZrh7Y+2epzwMahdhuA4wvUX6WqHqiqrVW1dWZm5jy7J0lazPkGwD7g7JM8O4DPDdV/qT0NdD3wQrtF9DBwU5I1bfL3plaTJE3J6sUaJPkT4AZgbZI5Bk/z3As8lOR9wLeAd7fm+4HbgFngB8B7AarqdJLfBA62dh+uqnMnliVJK2jRAKiq98yz68YRbQu4c57z7AZ2L6l3kqSJ8ZPAktQpA0CSOmUASFKnDABJ6pQBIEmdMgAkqVMGgCR1ygCQpE4ZAJLUKQNAkjplAEhSpwwASeqUASBJnTIAJKlTBoAkdcoAkKROGQCS1CkDQJI6ZQBIUqcMAEnqlAEgSZ0yACSpUwaAJHXKAJCkThkAktSpCwqAJMeSfD3JE0kOtdoVSQ4kOdrWa1o9ST6aZDbJk0neuhwDkCSdn+V4B/Avq+raqtraXu8CHqmqLcAj7TXArcCWtuwE7l+Ga0uSztMkbgFtA/a07T3AHUP1T9TAV4DLk6ybwPUlSWO40AAo4M+TPJ5kZ6tdVVUnANr6ylZfDzw3dOxcq0mSpmD1BR7/jqo6nuRK4ECSv16gbUbU6lWNBkGyE+BNb3rTBXZPkjSfC3oHUFXH2/ok8FngOuD5s7d22vpkaz4HbBw6fANwfMQ5H6iqrVW1dWZm5kK6J0lawHm/A0jyj4Afqarvte2bgA8D+4AdwL1t/bl2yD7griR7gbcDL5y9VaTls2nXF6bdBUmvERdyC+gq4LNJzp7nj6vqvyc5CDyU5H3At4B3t/b7gduAWeAHwHsv4NqSpAt03gFQVc8A/2xE/f8AN46oF3Dn+V5PkrS8LnQSWFJHpnWL8di9t0/luq93fhWEJHXKAJCkThkAktQpA0CSOmUASFKnDABJ6pQBIEmdMgAkqVMGgCR1ygCQpE4ZAJLUKQNAkjplAEhSpwwASeqUASBJnTIAJKlTBoAkdcoAkKROGQCS1CkDQJI6ZQBIUqcMAEnq1Oppd+D1aNOuL0y7C5K0KN8BSFKnVjwAktyS5Okks0l2rfT1JUkDK3oLKMkq4GPAzwNzwMEk+6rqqZXsh6TXlmneVj127+1Tu/akrfQ7gOuA2ap6pqr+H7AX2LbCfZAksfKTwOuB54ZezwFvn9TFnIyVpPmtdABkRK1e0SDZCexsL7+f5OmJ9+rCrQX+dtqdmIIljfvvf/j3vXMinVlBPf68exwzwNrc95oc9z8Zp9FKB8AcsHHo9Qbg+HCDqnoAeGAlO3Whkhyqqq3T7sdKc9z96HHM8Pof90rPARwEtiTZnORSYDuwb4X7IElihd8BVNWZJHcBDwOrgN1VdXgl+yBJGljxTwJX1X5g/0pfd8JeU7eslpHj7kePY4bX+bhTVYu3kiS97vhVEJLUKQNgAUmuSHIgydG2XjNPux2tzdEkO4bqb0vy9fa1Fx9NknOO+3dJKsnaSY9lKSY17iS/neSvkzyZ5LNJLl+pMc1nsa8mSXJZkk+1/Y8m2TS074Ot/nSSm8c958VgucedZGOSLyU5kuRwkvev3GjGN4mfd9u3KslfJfn85EexjKrKZZ4F+C1gV9veBdw3os0VwDNtvaZtr2n7HgP+OYNH4P8MuHXouI0MJsP/Blg77bGuxLiBm4DVbfu+Uedd4XGuAr4J/BRwKfA14Opz2vxb4ONtezvwqbZ9dWt/GbC5nWfVOOec9jKhca8D3tra/Cjwv3oY99Bxvwr8MfD5aY9zKYvvABa2DdjTtvcAd4xoczNwoKpOV9V3gAPALUnWAT9WVf+zBv+HfOKc4z8C/HvO+SDcRWIi466qP6+qM+34rzD4HMg0jfPVJMP/Lf4UuLG9o9kG7K2qF6vqWWC2ne+18HUnyz7uqjpRVV8FqKrvAUcYfPL/YjKJnzdJNgC3A3+wAmNYVgbAwq6qqhMAbX3liDajvt5ifVvmRtRJ8i7g21X1tUl0ehlMZNzn+GUG7w6mab4xjGzTwusF4CcWOHacc07bJMb999ptk7cAjy5jn5fDpMb9ewz+mPvh8nd5srr/B2GSfBH4xyN2fWjcU4yo1Xz1JP+wnfumMc8/ESs97nOu/SHgDPDJMa81KYv2dYE289VH/VF1sb3Lm8S4BwclbwQ+DXygqr573j2cjGUfd5J3Aier6vEkN1xg/1Zc9wFQVT83374kzydZV1Un2q2NkyOazQE3DL3eAPxFq284p34ceDODe4hfa3OjG4CvJrmuqv73BQxlSaYw7rPn3gG8E7ix3SKapkW/mmSozVyS1cCPA6cXOXaxc07bRMad5BIGv/w/WVWfmUzXL8gkxv0u4F1JbgPeAPxYkv9aVf9mMkNYZtOehLiYF+C3eeVk6G+NaHMF8CyDidA1bfuKtu8gcD0vT4beNuL4Y1x8k8ATGTdwC/AUMDPtMbb+rGYweb2ZlycFrzmnzZ28clLwobZ9Da+cFHyGwSTjouec9jKhcYfBfM/vTXt8Kznuc469gdfYJPDUO3AxLwzu/T0CHG3rs7/gtgJ/MNTulxlMCs0C7x2qbwW+weCJgf9M++DdOde4GANgIuNu7Z4DnmjLxy+Csd7G4ImVbwIfarUPA+9q228A/lvr+2PATw0d+6F23NO88gmvV53zYluWe9zAv2Bwq+TJoZ/vq/7gmfYyiZ/30P7XXAD4SWBJ6pRPAUlSpwwASeqUASBJnTIAJKlTBoAkdcoAkKROGQCS1CkDQJI69f8B/s6o2rSu74UAAAAASUVORK5CYII=
+<img src="data:image/png;base64,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
 "
 >
 </div>
@@ -13279,7 +13278,7 @@ $$H_1 : p_{old} &lt; p_{new}$$</p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.9053</pre>
+<pre>0.9034</pre>
 </div>
 
 </div>
@@ -13293,8 +13292,7 @@ $$H_1 : p_{old} &lt; p_{new}$$</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>k. 用文字解释一下你刚才在 <strong>j.</strong>中计算出来的结果。在科学研究中，这个值是什么？ 根据这个数值，新旧页面的转化率是否有区别呢？</p>
-<p><strong>在这里给出你的答案。</strong></p>
-<p>在零假设中模拟新页面与旧页面的转化率差值，有90.25%的比例大于 ab_data.csv 中观察到的实际差值。在科学研究中，这个值是假设检验的P值，一个大的P值，表明样本结果可以很轻易的偶然发生，所以不能拒绝零假设。</p>
+<p><strong>在零假设中模拟新页面与旧页面的转化率差值，有90.25%的比例大于 ab_data.csv 中观察到的实际差值。在科学研究中，这个值是假设检验的P值，一个大的P值，表明样本结果可以很轻易的偶然发生，所以不能拒绝零假设。</strong></p>
 <p><strong>根据这个数值，P = 0.9025 &gt; 0.5, 所以不拒绝零假设，新旧页面的转化率没有区别。</strong></p>
 
 </div>
@@ -13318,8 +13316,8 @@ $$H_1 : p_{old} &lt; p_{new}$$</p>
 
 <span class="n">convert_old</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;landing_page == &quot;old_page&quot; &amp; converted == 1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">convert_new</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;landing_page == &quot;new_page&quot; &amp; converted == 1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">n_old</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;landing_page == &quot;new_page&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">user_id</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
-<span class="n">n_new</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;landing_page == &quot;old_page&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">user_id</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
+<span class="n">n_old</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;landing_page == &quot;old_page&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">user_id</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
+<span class="n">n_new</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;landing_page == &quot;new_page&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">user_id</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
 <span class="n">convert_old</span><span class="p">,</span> <span class="n">convert_new</span><span class="p">,</span> <span class="n">n_old</span><span class="p">,</span> <span class="n">n_new</span>
 </pre></div>
 
@@ -13339,7 +13337,7 @@ $$H_1 : p_{old} &lt; p_{new}$$</p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(17489, 17264, 145310, 145274)</pre>
+<pre>(17489, 17264, 145274, 145310)</pre>
 </div>
 
 </div>
@@ -13385,8 +13383,8 @@ $$H_1 : p_{old} &lt; p_{new}$$</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>z-score: 1.262
-p-value: 0.896
+<pre>z-score: 1.311
+p-value: 0.905
 </pre>
 </div>
 </div>
@@ -13400,8 +13398,7 @@ p-value: 0.896
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>n. 根据上题算出的 z-score 和 p-value，我们认为新旧页面的转化率是否有区别？它们与 <strong>j.</strong> 与 <strong>k.</strong> 中的结果一致吗？</p>
-<p><strong>在这里给出你的答案。</strong></p>
-<p><strong>根据z-score 和 p-value的值，因为P=0.896 &gt; 0.5 ,所以不拒绝零假设，我们认为新页面与旧页面的转化率没有区别。它们与j. 和k.中得出的结果一致。</strong></p>
+<p><strong>根据z-score 和 p-value的值，因为P=0.905 &gt; 0.5 ,所以不拒绝零假设，我们认为新页面与旧页面的转化率没有区别。它们与j. 和k.中得出的结果一致。</strong></p>
 
 </div>
 </div>
@@ -13413,7 +13410,6 @@ p-value: 0.896
 <p><a id='regression'></a></p>
 <h3 id="III---&#22238;&#24402;&#20998;&#26512;&#27861;&#20043;&#19968;">III - &#22238;&#24402;&#20998;&#26512;&#27861;&#20043;&#19968;<a class="anchor-link" href="#III---&#22238;&#24402;&#20998;&#26512;&#27861;&#20043;&#19968;">&#182;</a></h3><p><code>1.</code> 在最后一部分中，你会看到，你在之前的A / B测试中获得的结果也可以通过执行回归来获取。<br><br></p>
 <p>a. 既然每行的值是转化或不转化，那么在这种情况下，我们应该执行哪种类型的回归？</p>
-<p><strong>在这里给出你的答案。</strong></p>
 <p><strong>逻辑回归。</strong></p>
 
 </div>
@@ -13655,10 +13651,10 @@ p-value: 0.896
   <th>Method:</th>               <td>MLE</td>       <th>  Df Model:          </th>   <td>     1</td>   
 </tr>
 <tr>
-  <th>Date:</th>          <td>Tue, 26 Mar 2019</td> <th>  Pseudo R-squ.:     </th>  <td>8.085e-06</td> 
+  <th>Date:</th>          <td>Wed, 27 Mar 2019</td> <th>  Pseudo R-squ.:     </th>  <td>8.085e-06</td> 
 </tr>
 <tr>
-  <th>Time:</th>              <td>19:31:28</td>     <th>  Log-Likelihood:    </th> <td>-1.0639e+05</td>
+  <th>Time:</th>              <td>17:32:55</td>     <th>  Log-Likelihood:    </th> <td>-1.0639e+05</td>
 </tr>
 <tr>
   <th>converged:</th>           <td>True</td>       <th>  LL-Null:           </th> <td>-1.0639e+05</td>
@@ -13691,16 +13687,7 @@ p-value: 0.896
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>e. 与 <strong>ab_page</strong> 关联的 p-值是多少？ 为什么它与你在 <strong>II</strong> 中发现的结果不同？<br><br>  <strong>提示</strong>: 与你的回归模型相关的零假设与备择假设分别是什么？它们如何与 <strong>Part II</strong> 中的零假设和备择假设做比较？</p>
-<p><strong>在这里给出你的答案。</strong></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>ab_page关联的p 值是0.190，与在II中的结果不同。因为在Parrt II 中的零假设是$H_0:p_{old} \geq p_{new}$, 备择假设是$H_1:p_{old} &lt; p_{new}$, 执行的是单尾假设检验，而与回归模型相关的零假设$H_0:p_{old} = p_{new}$, 备择假设为$H_1:p_{old}\neq p_{new}$，执行的是双尾假设检验，所以零假设设置不同使p值也不相同。</p>
+<p><strong>ab_page关联的p 值是0.190，与在II中的结果不同。因为在Parrt II 中的零假设是$H_0:p_{old} \geq p_{new}$, 备择假设是$H_1:p_{old} &lt; p_{new}$, 执行的是单尾假设检验，而与回归模型相关的零假设$H_0:p_{old} = p_{new}$, 备择假设为$H_1:p_{old}\neq p_{new}$，执行的是双尾假设检验，所以零假设设置不同使p值也不相同。</strong></p>
 
 </div>
 </div>
@@ -13710,16 +13697,8 @@ p-value: 0.896
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>f. 现在，你一定在考虑其他可能影响用户是否发生转化的因素。讨论为什么考虑将其他因素添加到回归模型中是一个不错的主意。在回归模型中添加附加项有什么弊端吗？</p>
-<p><strong>在这里给出你的答案。</strong></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>添加附加项可能会使X变量之间彼此相关，导致回归系数与预期关系反转，和不准确的假设检验结果，这些结果具有误导性。</p>
+<p><strong>因为将其他因素添加到回归模型中时，会使R平方值增大，使模型能更大程度上拟合数据。但是测试的内容越多，越可能意外地观察到显著差异，增加衡量标准时，也会增加任何将错误结果误认为正确的概率。
+添加附加项也可能会使X变量之间彼此相关，导致回归系数与预期关系反转，和不准确的假设检验结果，这些结果具有误导性。</strong></p>
 
 </div>
 </div>
@@ -13945,7 +13924,7 @@ Name: country, dtype: int64</pre>
 <div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df3</span><span class="p">[[</span><span class="s1">&#39;US&#39;</span><span class="p">,</span> <span class="s1">&#39;UK&#39;</span><span class="p">,</span> <span class="s1">&#39;CA&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">df3</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df3</span><span class="p">[[</span><span class="s1">&#39;CA&#39;</span><span class="p">,</span> <span class="s1">&#39;UK&#39;</span><span class="p">,</span> <span class="s1">&#39;US&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">df3</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">])</span>
 <span class="n">df3</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;CA&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">df3</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
@@ -13991,8 +13970,8 @@ Name: country, dtype: int64</pre>
       <th>intercept</th>
       <th>ab_page</th>
       <th>country</th>
-      <th>US</th>
       <th>UK</th>
+      <th>US</th>
     </tr>
   </thead>
   <tbody>
@@ -14007,7 +13986,7 @@ Name: country, dtype: int64</pre>
       <td>0</td>
       <td>US</td>
       <td>0</td>
-      <td>0</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>1</th>
@@ -14020,7 +13999,7 @@ Name: country, dtype: int64</pre>
       <td>0</td>
       <td>US</td>
       <td>0</td>
-      <td>0</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>2</th>
@@ -14033,7 +14012,7 @@ Name: country, dtype: int64</pre>
       <td>1</td>
       <td>US</td>
       <td>0</td>
-      <td>0</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>3</th>
@@ -14046,7 +14025,7 @@ Name: country, dtype: int64</pre>
       <td>1</td>
       <td>US</td>
       <td>0</td>
-      <td>0</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>4</th>
@@ -14059,7 +14038,7 @@ Name: country, dtype: int64</pre>
       <td>0</td>
       <td>US</td>
       <td>0</td>
-      <td>0</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -14122,10 +14101,10 @@ Name: country, dtype: int64</pre>
   <th>Method:</th>               <td>MLE</td>       <th>  Df Model:          </th>   <td>     3</td>   
 </tr>
 <tr>
-  <th>Date:</th>          <td>Tue, 26 Mar 2019</td> <th>  Pseudo R-squ.:     </th>  <td>2.324e-05</td> 
+  <th>Date:</th>          <td>Wed, 27 Mar 2019</td> <th>  Pseudo R-squ.:     </th>  <td>2.324e-05</td> 
 </tr>
 <tr>
-  <th>Time:</th>              <td>19:31:29</td>     <th>  Log-Likelihood:    </th> <td>-1.0639e+05</td>
+  <th>Time:</th>              <td>17:33:03</td>     <th>  Log-Likelihood:    </th> <td>-1.0639e+05</td>
 </tr>
 <tr>
   <th>converged:</th>           <td>True</td>       <th>  LL-Null:           </th> <td>-1.0639e+05</td>
@@ -14139,16 +14118,16 @@ Name: country, dtype: int64</pre>
       <td></td>         <th>coef</th>     <th>std err</th>      <th>z</th>      <th>P>|z|</th>  <th>[0.025</th>    <th>0.975]</th>  
 </tr>
 <tr>
-  <th>intercept</th> <td>   -1.9893</td> <td>    0.009</td> <td> -223.763</td> <td> 0.000</td> <td>   -2.007</td> <td>   -1.972</td>
+  <th>intercept</th> <td>   -2.0300</td> <td>    0.027</td> <td>  -76.249</td> <td> 0.000</td> <td>   -2.082</td> <td>   -1.978</td>
 </tr>
 <tr>
   <th>ab_page</th>   <td>   -0.0150</td> <td>    0.011</td> <td>   -1.308</td> <td> 0.191</td> <td>   -0.037</td> <td>    0.007</td>
 </tr>
 <tr>
-  <th>UK</th>        <td>    0.0099</td> <td>    0.013</td> <td>    0.744</td> <td> 0.457</td> <td>   -0.016</td> <td>    0.036</td>
+  <th>UK</th>        <td>    0.0506</td> <td>    0.028</td> <td>    1.784</td> <td> 0.074</td> <td>   -0.005</td> <td>    0.106</td>
 </tr>
 <tr>
-  <th>US</th>        <td>   -0.0408</td> <td>    0.027</td> <td>   -1.516</td> <td> 0.130</td> <td>   -0.093</td> <td>    0.012</td>
+  <th>US</th>        <td>    0.0408</td> <td>    0.027</td> <td>    1.516</td> <td> 0.130</td> <td>   -0.012</td> <td>    0.093</td>
 </tr>
 </table>
 </div>
@@ -14244,8 +14223,8 @@ df3['new_UK'] = df3['new_page'] * df3['UK']</code></pre>
       <th>intercept</th>
       <th>ab_page</th>
       <th>country</th>
-      <th>US</th>
       <th>UK</th>
+      <th>US</th>
       <th>new_page</th>
       <th>old_page</th>
     </tr>
@@ -14262,7 +14241,7 @@ df3['new_UK'] = df3['new_page'] * df3['UK']</code></pre>
       <td>0</td>
       <td>US</td>
       <td>0</td>
-      <td>0</td>
+      <td>1</td>
       <td>0</td>
       <td>1</td>
     </tr>
@@ -14277,7 +14256,7 @@ df3['new_UK'] = df3['new_page'] * df3['UK']</code></pre>
       <td>0</td>
       <td>US</td>
       <td>0</td>
-      <td>0</td>
+      <td>1</td>
       <td>0</td>
       <td>1</td>
     </tr>
@@ -14292,7 +14271,7 @@ df3['new_UK'] = df3['new_page'] * df3['UK']</code></pre>
       <td>1</td>
       <td>US</td>
       <td>0</td>
-      <td>0</td>
+      <td>1</td>
       <td>1</td>
       <td>0</td>
     </tr>
@@ -14307,7 +14286,7 @@ df3['new_UK'] = df3['new_page'] * df3['UK']</code></pre>
       <td>1</td>
       <td>US</td>
       <td>0</td>
-      <td>0</td>
+      <td>1</td>
       <td>1</td>
       <td>0</td>
     </tr>
@@ -14322,7 +14301,7 @@ df3['new_UK'] = df3['new_page'] * df3['UK']</code></pre>
       <td>0</td>
       <td>US</td>
       <td>0</td>
-      <td>0</td>
+      <td>1</td>
       <td>0</td>
       <td>1</td>
     </tr>
@@ -14401,10 +14380,10 @@ df3['new_UK'] = df3['new_page'] * df3['UK']</code></pre>
   <th>Method:</th>               <td>MLE</td>       <th>  Df Model:          </th>   <td>     5</td>   
 </tr>
 <tr>
-  <th>Date:</th>          <td>Tue, 26 Mar 2019</td> <th>  Pseudo R-squ.:     </th>  <td>3.483e-05</td> 
+  <th>Date:</th>          <td>Wed, 27 Mar 2019</td> <th>  Pseudo R-squ.:     </th>  <td>3.483e-05</td> 
 </tr>
 <tr>
-  <th>Time:</th>              <td>19:31:31</td>     <th>  Log-Likelihood:    </th> <td>-1.0639e+05</td>
+  <th>Time:</th>              <td>17:33:09</td>     <th>  Log-Likelihood:    </th> <td>-1.0639e+05</td>
 </tr>
 <tr>
   <th>converged:</th>           <td>True</td>       <th>  LL-Null:           </th> <td>-1.0639e+05</td>
@@ -14418,22 +14397,22 @@ df3['new_UK'] = df3['new_page'] * df3['UK']</code></pre>
       <td></td>         <th>coef</th>     <th>std err</th>      <th>z</th>      <th>P>|z|</th>  <th>[0.025</th>    <th>0.975]</th>  
 </tr>
 <tr>
-  <th>intercept</th> <td>   -1.9865</td> <td>    0.010</td> <td> -206.344</td> <td> 0.000</td> <td>   -2.005</td> <td>   -1.968</td>
+  <th>intercept</th> <td>   -2.0040</td> <td>    0.036</td> <td>  -55.008</td> <td> 0.000</td> <td>   -2.075</td> <td>   -1.933</td>
 </tr>
 <tr>
-  <th>ab_page</th>   <td>   -0.0206</td> <td>    0.014</td> <td>   -1.506</td> <td> 0.132</td> <td>   -0.047</td> <td>    0.006</td>
+  <th>ab_page</th>   <td>   -0.0674</td> <td>    0.052</td> <td>   -1.297</td> <td> 0.195</td> <td>   -0.169</td> <td>    0.034</td>
 </tr>
 <tr>
-  <th>UK</th>        <td>   -0.0057</td> <td>    0.019</td> <td>   -0.306</td> <td> 0.760</td> <td>   -0.043</td> <td>    0.031</td>
+  <th>UK</th>        <td>    0.0118</td> <td>    0.040</td> <td>    0.296</td> <td> 0.767</td> <td>   -0.066</td> <td>    0.090</td>
 </tr>
 <tr>
-  <th>new_UK</th>    <td>    0.0314</td> <td>    0.027</td> <td>    1.181</td> <td> 0.238</td> <td>   -0.021</td> <td>    0.084</td>
+  <th>new_UK</th>    <td>    0.0783</td> <td>    0.057</td> <td>    1.378</td> <td> 0.168</td> <td>   -0.033</td> <td>    0.190</td>
 </tr>
 <tr>
-  <th>US</th>        <td>   -0.0175</td> <td>    0.038</td> <td>   -0.465</td> <td> 0.642</td> <td>   -0.091</td> <td>    0.056</td>
+  <th>US</th>        <td>    0.0175</td> <td>    0.038</td> <td>    0.465</td> <td> 0.642</td> <td>   -0.056</td> <td>    0.091</td>
 </tr>
 <tr>
-  <th>new_US</th>    <td>   -0.0469</td> <td>    0.054</td> <td>   -0.872</td> <td> 0.383</td> <td>   -0.152</td> <td>    0.059</td>
+  <th>new_US</th>    <td>    0.0469</td> <td>    0.054</td> <td>    0.872</td> <td> 0.383</td> <td>   -0.059</td> <td>    0.152</td>
 </tr>
 </table>
 </div>
@@ -14458,7 +14437,7 @@ df3['new_UK'] = df3['new_page'] * df3['UK']</code></pre>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='conclusions'></a></p>
-<h2 id="&#24635;&#32467;">&#24635;&#32467;<a class="anchor-link" href="#&#24635;&#32467;">&#182;</a></h2><p>祝贺你顺利完成了该项目！</p>
+<h2 id="&#24635;&#32467;">&#24635;&#32467;<a class="anchor-link" href="#&#24635;&#32467;">&#182;</a></h2><p><strong>根据A/B测试的结果，不推荐这家电商发布新页面。</strong></p>
 
 </div>
 </div>
